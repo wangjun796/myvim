@@ -9,6 +9,11 @@ call vundle#rc('$VIM/vimfiles/bundle/')
 Bundle 'gmarik/vundle'
 
 "------------------
+" fast file open
+"------------------
+Bundle 'wincent/Command-T'
+
+"------------------
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'

@@ -15,9 +15,12 @@ syntax on
 "color solarized
 
 " highlight current line
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
+"au WinLeave * set nocursorline nocursorcolumn
+"au WinEnter * set cursorline cursorcolumn
+
 set cursorline cursorcolumn
+hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
+hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
 
 " search
 set incsearch

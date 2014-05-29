@@ -7,3 +7,6 @@
 source $VIM/bundles.vim
 source $VIM/dotVimrc.vim
 source $VIM/hideMenu.vim
+
+set tags=tags;
+	set autochdir
