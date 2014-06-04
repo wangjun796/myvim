@@ -1,4 +1,4 @@
-"Òþ²Ø²Ëµ¥À¸¼°¹¤¾ßÀ¸(:help guioptions)
+"ï¿½ï¿½ï¿½Ø²Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(:help guioptions)
 "set go -=mjkk
 "set go -=T
 "set number
@@ -18,3 +18,7 @@ set langmenu=zh_CN
 let $LANG = 'zh_CN.UTF-8'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
+
+set cursorline cursorcolumn
+hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
+hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
