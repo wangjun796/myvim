@@ -161,6 +161,7 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
                 set guifont=Andale\ Mono\ Regular:h16,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
             elseif WINDOWS() && has("gui_running")
                 "set guifont=Andale_Mono:h13,Menlo:h13,Consolas:h13,Courier_New:h13 "字体设置
+                set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
             endif
         endif
     else
