@@ -4,6 +4,7 @@
 "set number
 "set background=#C3EBCD
 "source $VIM/greenBackGround.vim
+source $VIM/hideMenu.vim
 source $VIM/bundles.vim
 source $VIM/dotVimrc.vim
 "source $VIM/spf13Bundles.vim
@@ -54,10 +55,7 @@ set cursorline cursorcolumn
 hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
 hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
 
-
-
 " Vim UI {
-
 
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
@@ -73,6 +71,7 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
+    highlight clear ExtraWhiteSpace
     let g:CSApprox_hook_post = ['hi clear SignColumn']
     "highlight clear CursorLineNr    " Remove highlight color from current line number
 
@@ -110,8 +109,8 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
-    set list
-    set listchars=tab:?\ ,trail:?,extends:#,nbsp:. " Highlight problematic whitespace
+    set nolist
+    "set listchars=tab:?\ ,trail:?,extends:#,nbsp:. " Highlight problematic whitespace
 
 " }
 
@@ -275,27 +274,27 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
 
 " Plugins {
 		let g:spf13_bundle_groups=['general', 'writing', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'twig', 'javascript', 'html', 'misc',]
-    " TextObj Sentence {
-        if count(g:spf13_bundle_groups, 'writing')
-            augroup textobj_sentence
-              autocmd!
-              autocmd FileType markdown call textobj#sentence#init()
-              autocmd FileType textile call textobj#sentence#init()
-              autocmd FileType text call textobj#sentence#init()
-            augroup END
-        endif
-    " }
-
-    " TextObj Quote {
-        if count(g:spf13_bundle_groups, 'writing')
-            augroup textobj_quote
-                autocmd!
-                autocmd FileType markdown call textobj#quote#init()
-                autocmd FileType textile call textobj#quote#init()
-                autocmd FileType text call textobj#quote#init({'educate': 0})
-            augroup END
-        endif
-    " }
+"    " TextObj Sentence {
+"        if count(g:spf13_bundle_groups, 'writing')
+"            augroup textobj_sentence
+"              autocmd!
+"              autocmd FileType markdown call textobj#sentence#init()
+"              autocmd FileType textile call textobj#sentence#init()
+"              autocmd FileType text call textobj#sentence#init()
+"            augroup END
+"        endif
+"    " }
+"
+"    " TextObj Quote {
+"        if count(g:spf13_bundle_groups, 'writing')
+"            augroup textobj_quote
+"                autocmd!
+"                autocmd FileType markdown call textobj#quote#init()
+"                autocmd FileType textile call textobj#quote#init()
+"                autocmd FileType text call textobj#quote#init({'educate': 0})
+"            augroup END
+"        endif
+"    " }
 		" PIV {
         let g:DisableAutoPHPFolding = 0
         let g:PIVAutoClose = 0
@@ -728,9 +727,10 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
     " }
 
     " indent_guides {
+    		"set ts=4 sw=4 et
         let g:indent_guides_start_level = 2
         let g:indent_guides_guide_size = 1
-        let g:indent_guides_enable_on_vim_startup = 1
+        let g:indent_guides_enable_on_vim_startup = 0
     " }
 
     " vim-airline {
@@ -775,4 +775,3 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
         endif
     endif
 " }
-
