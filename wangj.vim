@@ -9,6 +9,7 @@ source $VIM/bundles.vim
 source $VIM/dotVimrc.vim
 "source $VIM/spf13Bundles.vim
 "source $VIM/spf13Vimrc.vim
+let g:snippets_dir='$VIM/vimfiles/bundle/snipmate.vim/snippets'
 
 " Environment {
 
@@ -358,14 +359,14 @@ hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=bla
     " Tabularize {
         nmap <Leader>a& :Tabularize /&<CR>
         vmap <Leader>a& :Tabularize /&<CR>
-        nmap <Leader>a= :Tabularize /=<CR>
-        vmap <Leader>a= :Tabularize /=<CR>
+        "nmap <Leader>a= :Tabularize /=<CR>
+        "vmap <Leader>a= :Tabularize /=<CR>
         nmap <Leader>a: :Tabularize /:<CR>
         vmap <Leader>a: :Tabularize /:<CR>
         nmap <Leader>a:: :Tabularize /:\zs<CR>
         vmap <Leader>a:: :Tabularize /:\zs<CR>
-        nmap <Leader>a, :Tabularize /,<CR>
-        vmap <Leader>a, :Tabularize /,<CR>
+        "nmap <Leader>a, :Tabularize /,<CR>
+        "vmap <Leader>a, :Tabularize /,<CR>
         nmap <Leader>a,, :Tabularize /,\zs<CR>
         vmap <Leader>a,, :Tabularize /,\zs<CR>
         nmap <Leader>a<Bar> :Tabularize /<Bar><CR>

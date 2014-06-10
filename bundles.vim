@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 "git clone https://github.com/gmarik/vundle.git $VIM/vimfiles/bundle/vundle
-set rtp+=$VIM/vimfiles/bundle/vundle/
+set rtp+=$VIM/vimfiles/bundle/vundle
 call vundle#rc('$VIM/vimfiles/bundle/')
 
 " let Vundle manage Vundle
@@ -106,5 +106,32 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
+
+
+"--------------
+" IDE Features
+"--------------
+Bundle 'a.vim'
+Bundle 'Align'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'bufexplorer.zip'
+Bundle 'ccvext.vim'
+Bundle 'cSyntaxAfter'
+Bundle 'Yggdroot/indentLine'
+" Bundle 'javacomplete'
+" Bundle 'vim-javacompleteex'               "更好的 Java 补全插件
+Bundle 'Mark--Karkat'
+" Bundle 'fholgado/minibufexpl.vim'         "好像与 Vundle 插件有一些冲突
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'OmniCppComplete'
+Bundle 'repeat.vim'
+"Bundle 'msanders/snipmate.vim'
+Bundle 'wesleyche/SrcExpl'
+" Bundle 'ervandew/supertab'                "有时与 snipmate 插件冲突
+Bundle 'std_c.zip'
+Bundle 'taglist.vim'
+Bundle 'TxtBrowser'
+Bundle 'ZoomWin'
+
 
 filetype plugin indent on     " required!

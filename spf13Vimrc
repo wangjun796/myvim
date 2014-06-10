@@ -151,19 +151,7 @@
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
 
-		set tags=tags;
-			set autochdir
-		
-		source $VIM/cscope_maps.vim
-		
-		set langmenu=zh_CN
-		let $LANG = 'zh_CN.UTF-8'
-		source $VIMRUNTIME/delmenu.vim
-		source $VIMRUNTIME/menu.vim
-		
-		set cursorline cursorcolumn
-		hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black 
-		hi cursorcolumn cterm=NONE ctermbg=darkred ctermfg=white guibg=#CEE2D8 guifg=black  
+    set cursorline                  " Highlight current line
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
@@ -1099,5 +1087,3 @@
         endif
     endif
 " }
-
-
