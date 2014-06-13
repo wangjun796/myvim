@@ -11,6 +11,15 @@ source $VIM/dotVimrc.vim
 "source $VIM/spf13Vimrc.vim
 let g:snippets_dir='$VIM/vimfiles/bundle/snipmate.vim/snippets'
 
+if has('win32')
+map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>    #非插入模式下F11全屏
+imap <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>    #插入模式下F11全屏
+endif
+
+nnoremap <c-F5> :!
+
+
+
 " Environment {
 
     " Identify platform {

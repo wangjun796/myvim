@@ -207,14 +207,28 @@ nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
 
+" -----------------------------------------------------------------------------
+"  < SrcExpl 插件配置 >
+" -----------------------------------------------------------------------------
+" 增强源代码浏览，其功能就像Windows中的"Source Insight"
+nmap <F7> :SrcExplToggle<CR>                "打开/闭浏览窗口
+" -----------------------------------------------------------------------------
+"  < std_c 插件配置 >
+" -----------------------------------------------------------------------------
+" 用于增强C语法高亮
+
+" 启用 // 注视风格
+let c_cpp_comments = 0
+hi clear ExtraWhiteSpace
+
 "------------------
 " Useful Functions
 "------------------
 " easier navigation between split windows
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+nnoremap <a-j> <c-w>j
+nnoremap <a-k> <c-w>k
+nnoremap <a-h> <c-w>h
+nnoremap <a-l> <c-w>l
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
@@ -238,7 +252,7 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 " eggcache vim
-nnoremap ; :
+"nnoremap ; :
 :command W w
 :command WQ wq
 :command Wq wq

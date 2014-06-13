@@ -9,7 +9,7 @@ call vundle#rc('$VIM/vimfiles/bundle/')
 Bundle 'gmarik/vundle'
 
 "------------------
-" fast file open
+" fast file open "need sopport ruby
 "------------------
 Bundle 'wincent/Command-T'
 
