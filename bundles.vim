@@ -133,5 +133,11 @@ Bundle 'taglist.vim'
 Bundle 'TxtBrowser'
 Bundle 'ZoomWin'
 
+"------------------
+"Global Search Tags
+"-------------------
+"Bundle 'ShowFunc.vim'
+"Bundle 'listtag'
+Bundle 'EasyGrep'
 
 filetype plugin indent on     " required!
