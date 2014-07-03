@@ -17,6 +17,7 @@ imap <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 endif
 
 nnoremap <c-F5> :!
+nnoremap <c-F3> :Grep 
 "map  <c-F7>   <Plug>ShowFunc
 
 
