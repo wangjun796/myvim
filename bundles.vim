@@ -139,5 +139,7 @@ Bundle 'ZoomWin'
 "Bundle 'ShowFunc.vim'
 "Bundle 'listtag'
 Bundle 'EasyGrep'
+Bundle 'vim-scripts/TagHighlight'
+Bundle 'EasyColour'
 
 filetype plugin indent on     " required!
