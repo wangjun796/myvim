@@ -37,3 +37,4 @@ hi Member guifg = darkblue
 hi Type gui=NONE guifg = darkred
 
 hi clear ExtraWhiteSpace
+cs add E:\view\wangj_MobilePayment\MPJCP\Prog\ÖÐ¹úÒÆ¶¯COS\DTTMBCS-BASICOS-GP221Java301-CMCC-SWP\cscope.out
